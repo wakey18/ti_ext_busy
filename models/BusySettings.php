@@ -1,4 +1,4 @@
-<?php namespace wakey\Busy\Models;
+<?php namespace Wakey\Busy\Models;
 
 use Model;
 
