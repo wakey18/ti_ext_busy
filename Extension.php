@@ -41,7 +41,7 @@ class Extension extends BaseExtension
             'settings' => [
                 'label' => 'Busy?',
                 'description' => 'If you need to suspend the checkout turn on this setting.',
-                'icon' => 'fa fa-cart-plus',
+                'icon' => 'fas fa-store-slash',
                 'model' => 'wakey\Busy\Models\BusySettings',
                 'permissions' => ['wakey.Busy.ManageSetting'],
             ],
