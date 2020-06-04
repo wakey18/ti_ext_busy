@@ -5,7 +5,7 @@
   "version": "v1.0.0",
   "author": "wakey18",
   "icon": {
-    "class": "fas fa-store-slash",
+    "class": "far fa-window-close",
     "backgroundColor": "#25C7EE",
     "color": "#FFF"
   },
