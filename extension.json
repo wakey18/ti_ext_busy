@@ -5,7 +5,7 @@
   "version": "v1.0.0",
   "author": "wakey18",
   "icon": {
-    "class": "fa-plug",
+    "class": "fa fa-plug",
     "backgroundColor": "#25C7EE",
     "color": "#FFF"
   },
