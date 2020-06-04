@@ -1,4 +1,4 @@
-<?php namespace wakey\Busy;
+<?php namespace Wakey\Busy;
 
 use Admin\Models\Orders_model;
 use Igniter\Flame\Exception\ApplicationException;
