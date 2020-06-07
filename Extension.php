@@ -4,7 +4,7 @@ use Admin\Models\Orders_model;
 use Igniter\Flame\Exception\ApplicationException;
 use Igniter\Local\Facades\Location;
 use Illuminate\Support\Facades\Event;
-use wakey\Busy\Models\BusySettings;
+use Wakey\Busy\Models\BusySettings;
 use System\Classes\BaseExtension;
 
 
@@ -43,7 +43,7 @@ class Extension extends BaseExtension
                 'description' => 'If you need to suspend the checkout turn on this setting.',
                 'icon' => 'fas fa-poo-storm',
                 'model' => 'wakey\Busy\Models\BusySettings',
-                'permissions' => ['wakey.Busy.ManageSetting'],
+                'permissions' => ['Wakey.Busy.*'],
             ],
         ];
     }
@@ -56,9 +56,9 @@ class Extension extends BaseExtension
     public function registerPermissions()
     {
         return [
-            'wakey.Busy.ManageSetting' => [
+            'Wakey.Busy.ManageSetting' => [
                 'description' => 'A way to disable the checkout temporarily',
-//                'group' => 'module',
+                'group' => 'module',
             ],
         ];
     }
