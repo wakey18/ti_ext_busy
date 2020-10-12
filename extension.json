@@ -2,8 +2,8 @@
   "code": "wakey.busy",
   "name": "Busy",
   "description": "If you are busy this will disable the checkout button and display a message",
-  "version": "v1.0.0",
-  "author": "wakey18",
+  "version": "v1.0.1",
+  "author": "Wakey",
   "icon": {
     "class": "fas fa-poo-storm",
     "backgroundColor": "#25C7EE",
