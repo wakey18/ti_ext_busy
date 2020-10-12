@@ -43,7 +43,7 @@ class Extension extends BaseExtension
                 'description' => 'If you need to suspend the checkout turn on this setting.',
                 'icon' => 'fas fa-poo-storm',
                 'model' => 'wakey\Busy\Models\BusySettings',
-                'permissions' => ['Wakey.Busy.*'],
+                'permissions' => ['Wakey.Busy.ManageSetting'],
             ],
         ];
     }
