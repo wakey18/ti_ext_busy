@@ -1,14 +1,23 @@
 <?php
 
 /**
- * Model configuration options for settings model.
+ * Model configuration options for BusySettings model.
  */
 
 return [
     'form' => [
         'toolbar' => [
             'buttons' => [
-                'save' => ['label' => 'lang:admin::lang.button_save', 'class' => 'btn btn-primary', 'data-request' => 'onSave'],
+                'back' => [
+                    'label' => 'lang:admin::lang.button_icon_back',
+                    'class' => 'btn btn-default',
+                    'href' => 'settings',
+                ],
+                'save' => [
+                    'label' => 'lang:admin::lang.button_save',
+                    'class' => 'btn btn-primary',
+                    'data-request' => 'onSave'
+                ],
                 'saveClose' => [
                     'label' => 'lang:admin::lang.button_save_close',
                     'class' => 'btn btn-default',
@@ -19,9 +28,20 @@ return [
         ],
         'fields' => [
             'busy' => [
-                'label' => 'Temporarily disable the checkout?',
+                'label' => 'wakey.busy::default.label_busy',
                 'type' => 'switch',
-                'default' => FALSE,
+                'comment' => 'wakey.busy::default.help.comment',
+            ],
+
+            'busy_message' => [
+                'label' => 'wakey.busy::default.label_busy_message',
+                'type' => 'textarea',
+                'default' => 'We are currently experiencing a high volume of orders and have decided to temporarily disable the checkout. Please check back soon.',
+                'trigger' => [
+                    'action' => 'show',
+                    'field' => 'busy',
+                    'condition' => 'checked',
+                ],
             ],
         ],
     ],
