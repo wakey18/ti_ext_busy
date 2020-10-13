@@ -29,9 +29,9 @@ class Extension extends BaseExtension
     {
         Event::listen('igniter.checkout.beforeSaveOrder', function ($order, $data) {
             $busySetting = BusySettings::get('busy');
-
+            $busyMessage = BusySettings::get('busy_message');
             if ($busySetting == 1)
-                $busyMessage = BusySettings::get('busy_message');
+
                 throw new ApplicationException($busyMessage);
 		  });
     }
